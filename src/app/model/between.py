@@ -1,0 +1,3 @@
+class Meio():
+    def meio():
+    
