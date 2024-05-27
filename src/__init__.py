@@ -1,0 +1,1 @@
+from .api.validadorCNPJ import ValidarCnpj
