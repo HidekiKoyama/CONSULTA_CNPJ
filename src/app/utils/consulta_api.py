@@ -16,10 +16,10 @@ class Consulta():
                 lista = vl["nome"], vl["uf"], vl["municipio"], vl["logradouro"], vl["numero"], vl["complemento"], vl["cep"], vl["telefone"], vl["email"], vl["situacao"], vl["data_situacao"], vl["abertura"], vl["natureza_juridica"], vl["fantasia"], vl["cnpj"], vl["ultima_atualizacao"], vl["status"], vl["tipo"], vl["efr"], vl["motivo_situacao"], vl["situacao_especial"], vl["data_situacao_especial"], vl["capital_social"]
                 return lista
             else:
-                return "Digite um CNPJ válido ou completo!"
+                return None
             
         except:
-            return "Digite apenas numeros"
+            return None
 
 """
 

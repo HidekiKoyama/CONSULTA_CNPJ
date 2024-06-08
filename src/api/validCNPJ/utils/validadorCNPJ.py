@@ -1,4 +1,5 @@
-class Cnpj:
+
+class Cnpj():
     def __init__(self, cnpj : str):
         self.__cnpj = str(cnpj)
         self.__RG1 = [5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2]
