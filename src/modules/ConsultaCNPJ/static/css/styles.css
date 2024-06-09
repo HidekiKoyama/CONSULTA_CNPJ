@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+
+    width: 90%;
+}
+.space{
+    height: 90px;
+}

@@ -1,10 +1,12 @@
 from flask import Blueprint, render_template, request
-from src.app.utils.consulta_api import Consulta
+from utils.consulta_api import Consulta
 
-app_main = Blueprint("app_main", __name__, static_folder="./view/", template_folder="./view/")
+consultaCNPJ = Blueprint('cnpj', __name__, static_folder='static',
+                    template_folder='templates', url_prefix="/ConsultaCNPJ")
 
-@app_main.route('/', methods=["POST", "GET"])
-def index():
+
+@consultaCNPJ.route('/consultarCnpj', methods=["POST", "GET"])
+def consultarCnpj():
     if request.method == "POST":
         buscar = Consulta()
         cnpj = str(request.form.get("cnpj-busca"))

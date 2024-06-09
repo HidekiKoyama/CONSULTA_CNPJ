@@ -1,0 +1,1 @@
+from .ConsultaCNPJ.consultaCNPJ import consultaCNPJ
